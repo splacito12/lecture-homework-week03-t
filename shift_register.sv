@@ -9,7 +9,7 @@ module shift_register #(
 );
 
 
-always_ff @(posedge clk) begin
+always @(posedge clk) begin
     if(rst) begin
         out <= 32'b0;
     end
